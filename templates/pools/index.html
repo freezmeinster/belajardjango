@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <head><title>Belajar Python</title></head>
+        <div>
+            {% if latest %}
+                <ul>
+                {% for pool in latest %}
+                    <li><a href="/pools/{{pool.id}}">{{ pool.question }}</a></li>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </body>
+</html>
